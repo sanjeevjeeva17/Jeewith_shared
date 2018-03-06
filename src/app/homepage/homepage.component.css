@@ -1,0 +1,29 @@
+/*.section-title {
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+
+
+.btn-default {
+	border-color: #fff;
+	color: #fff;
+}
+*/
+
+.card a {
+    color: #e78b90;
+  }
+  
+  .section-padding {
+      padding: 30px;
+  }
+  
+  .btn {
+      font-size: 14px;
+  }
+  
+  #home-section {
+      padding-top: 0px;
+  }
+  

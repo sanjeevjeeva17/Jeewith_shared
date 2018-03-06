@@ -1,0 +1,189 @@
+<div class="section section-header">
+	<div class="parallax filter filter-color-red">
+		<div class="image"
+  	     style="background-image: url('assets/img/listen_bible.jpg')">
+		</div>            	
+	</div>
+</div>
+<div class="container">
+<div class="section" id="audiocategories">
+	<div class="container">
+		<div class="row">
+			<div class=" col-sm-4 col-md-3 col-lg-3 leftmenu">
+				<div class="list-group">
+					<ul class="activeleftmenu">
+						<li class="list-group-item dropdown" [class.active] ><a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse Categories <b class="caret"></b></a>								<ul class="dropdown-menu">
+								<li class="list-group-item" [class.active]="filterBy=='BIBLE_DOC'" (click)="filterBy='BIBLE_DOC'" >
+		            				<i class="fa fa-book"></i> Bible Documentaries
+		        				</li>
+		       					<li class="list-group-item" [class.active]="filterBy=='REMEDIES'" (click)="filterBy='REMEDIES'" >
+		     						<i class="fa fa-search"></i> Natural Remedies
+	        					</li>
+	        					<li class="list-group-item" [class.active]="filterBy=='HEALTH'" (click)="filterBy='HEALTH'" >		            						
+	        						<i class="fa fa-user"></i> Health Classes
+		        				</li>
+		        				<li class="list-group-item" [class.active]="filterBy=='SABBATHSCHOOL'" (click)="filterBy='SABBATHSCHOOL'" >
+		        		    		<i class="fa fa-folder-open-o"></i> Weekly Sabbath School <span class="badge">14</span>
+		        				</li>
+		       					<li class="list-group-item" [class.active]="filterBy=='SEVENTH'" (click)="filterBy='SEVENTH'" >
+		   				   			<i class="fa fa-envelope"></i> 7th Day Sabbath Series
+		       					</li>
+	       					</ul>
+						</li>
+						<li class="list-group-item dropdown" [class.active] ><a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse Presenters <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+		        				<li class="list-group-item" [class.active]="filterBy=='JOSEPH_MAGAR'" (click)="filterBy='JOSEPH_MAGAR'" >
+		       						<i class="fa fa-comment-o"></i> Joseph Magar
+		       					</li>
+		       					<li class="list-group-item" [class.active]="filterBy=='SB_THING'" (click)="filterBy='SB_THING'" >
+		       						<i class="fa fa-search"></i> S. B. Thing
+	        					</li>
+	        					<li class="list-group-item" [class.active]="filterBy=='ISAAC_PRADHAN'" (click)="filterBy='ISAAC_PRADHAN'" >
+		       						<i class="fa fa-user"></i> Isaac Pradhan
+		       					</li>
+		       					<li class="list-group-item" [class.active]="filterBy=='MARSH_CHARDHARY'" (click)="filterBy='MARSH_CHARDHARY'" >
+	       				    		<i class="fa fa-folder-open-o"></i> Marsh Chaudhary <span class="badge">14</span>
+	        					</li>		        					
+	        					<li class="list-group-item" [class.active]="filterBy=='DOUG_BACHELOR'" (click)="filterBy='DOUG_BACHELOR'" >
+		        		    		<i class="fa fa-folder-open-o"></i> Doug Bachelor <span class="badge">14</span>
+		        				</li>
+		        			</ul>
+						</li>
+						<li class="list-group-item dropdown" [class.active] ><a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse Topics <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+		        				<li class="list-group-item" [class.active]="filterBy=='PROPHECY'" (click)="filterBy='PROPHECY'" >
+		           					<i class="fa fa-comment-o"></i> Prophecy
+		        				</li>
+		       					<li class="list-group-item" [class.active]="filterBy=='FAITH'" (click)="filterBy='FAITH'" >
+		       						<i class="fa fa-search"></i> Faith
+		       					</li>
+		       					<li class="list-group-item" [class.active]="filterBy=='SIN'" (click)="filterBy='SIN'" >
+            						<i class="fa fa-user"></i> Sin
+		       					</li>
+		       					<li class="list-group-item" [class.active]="filterBy=='SABBATHSCHOOL'" (click)="filterBy='SABBATHSCHOOL'" >
+		        				    		<i class="fa fa-folder-open-o"></i> Health <span class="badge">14</span>
+		        				</li>
+		        				<li class="list-group-item" [class.active]="filterBy=='SEVENTH'" (click)="filterBy='SEVENTH'" >
+		         			   			<i class="fa fa-envelope"></i> Misc
+		        				</li>
+        					</ul>
+						</li>
+					</ul>
+				</div>	
+			</div>
+			<div id="container">	
+				<div class="row" id="audio-top">
+					<div class="col-xs-6 col-md-4" id="audio-image">
+						<div class="thumbnail">
+							<img src="/assets/img/office-1.jpeg">
+						</div>						
+					</div>
+					<div class="col-xs-6 col-md-8" id="audio-player">
+						<div class="row">
+							<div id="audio-info">
+								<h2 class="book">Christ's Object Lessons</h2> 
+								<h4 class="chapter">God's Love For Man</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="panel panel-default">
+				            	<audio id="audio" autoplay preload="auto" tabindex="0" controls>
+				            	    <source src="https://jsbin-user-assets.s3.amazonaws.com/ipodscott/sample1.mp3">
+				           		</audio>
+				        	</div>
+				       	</div>
+				    </div>
+				</div>
+				<div class="row">
+			        <div id="playlist">
+			        	<div class="plwrap">
+				        	<ul id="plList">
+					       		<li class="active list-group-item">
+									<a href="https://jsbin-user-assets.s3.amazonaws.com/ipodscott/sample1.mp3">
+					       				<div class="plItem">
+					       					<div class="plNum">01</div>
+					       					<div class="plTitle">God's Love For Man</div>
+					       					<div class="plLength">11:30</div>
+					       				</div>					       				
+					       			</a>
+					       		</li>
+								<li class="list-group-item">
+									<a href="https://jsbin-user-assets.s3.amazonaws.com/ipodscott/sample2.mp3">
+					       				<div class="plItem">
+					       					<div class="plNum">02</div>
+					       					<div class="plTitle">The Sinner's Need of Christ</div>
+					       					<div class="plLength">11:30</div>
+					       				</div>
+					       			</a>
+					       		</li>
+					       		<li class="list-group-item">
+									<a href="/audio/books/01_mt/01.mp3">
+					       				<div class="plItem">
+					       					<div class="plNum">03</div>
+					       					<div class="plTitle">Repentance</div>
+					       					<div class="plLength">11:30</div>
+					       				</div>
+					       			</a>
+					       		</li>
+								<li class="list-group-item">
+									<a href="https://jsbin-user-assets.s3.amazonaws.com/ipodscott/sample1.mp3">
+					       				<div class="plItem">
+					       					<div class="plNum">04</div>
+					       					<div class="plTitle">Confession</div>
+					       					<div class="plLength">11:30</div>
+					       				</div>
+					       			</a>
+					       		</li>
+								<li class="list-group-item">
+									<a href="https://jsbin-user-assets.s3.amazonaws.com/ipodscott/sample1.mp3">
+					       				<div class="plItem">
+					       					<div class="plNum">05</div>
+					       					<div class="plTitle">Consecration</div>
+					       					<div class="plLength">11:30</div>
+					       				</div>
+					       			</a>
+					       		</li>
+								<li class="list-group-item">
+									<a href="https://jsbin-user-assets.s3.amazonaws.com/ipodscott/sample1.mp3">
+					       				<div class="plItem">
+					       					<div class="plNum">06</div>
+					       					<div class="plTitle">Consecration</div>
+					       					<div class="plLength">11:30</div>
+					       				</div>
+					       			</a>
+					       		</li>
+					       		
+					       		<li id="last">
+					       			
+					       		</li>					       		
+					    	</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+				<!-- Audio Tiles 
+
+				<div class="col-xs-12 col-sm-6 col-md-9 col-lg-9">
+					<h3>{{title}}</h3>
+
+							<div class="row">
+								<ul class="list-unstyled video-list-thumbs row">
+                                        <li class="col-lg-3 col-sm-4 col-xs-6" *ngFor = "let video of (visibleAudios | AudioFilter:filterBy)">
+                                        <a href="#" title="{{audio.title}}">
+                                            <img src={{audio.url}} alt="Barca" class="img-responsive" height="130px" />
+                                            <h2>{{video.title}}</h2>
+                                            <span class="glyphicon glyphicon-play-circle"></span>
+                                            <span class="duration">03:15</span>
+                                        </a>
+                                    </li>
+                                   </ul>
+							</div>
+				</div> -->
+				<div class="clearfix">
+					
+				</div><nav></nav>
+			</div>
+		</div>
+	</div>
+</div>

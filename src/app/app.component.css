@@ -1,0 +1,55 @@
+
+.navbar-header img {
+    margin-top: 10px;
+  }
+  .navbar-transparent {
+    padding-top: 0;
+    }
+  
+  .navbar .navbar-nav > li > a {
+      font-size: 18px;
+      font-weight: 500px;
+      margin: 0;
+      padding: 40px 15px;
+  }
+  
+  .navbar .navbar-nav > li:hover {
+      background-color: #eee;
+      color: #000;
+  }
+  .navbar .navbar-nav > li > a:hover {
+      color: #000;
+      line-height: 1.42857143;
+  }
+  .navbar-brand {
+      margin-top: 25px;
+  }
+  
+  .navbar-brand a {
+      font-size: 18px;
+      font-weight: 500px;
+  }
+  
+  
+  .footer ul {
+      display: flex;
+      text-align: center;
+  
+  }
+  
+  .footer ul li {
+      padding-right: 30px;	
+      
+  }
+  
+  .footer ul li a {
+      color: #fff;
+      font-size: 18px;
+      line-height: 75px;
+  }
+  .footer hr {
+      margin-top: 10px;
+  }
+  .copyright {
+      color: #fff;
+  }
