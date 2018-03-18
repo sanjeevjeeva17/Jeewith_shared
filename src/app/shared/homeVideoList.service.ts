@@ -1,4 +1,4 @@
-import{ Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Http, Response} from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
@@ -11,7 +11,7 @@ export class HomeVideoListService{
     //HomeVideos = [];
     private _url:string = "assets/jsondata/homeMedia.json";
 
-constructor(private _http:Http){
+constructor(private _http: Http){
 
 }
     getMedia(){

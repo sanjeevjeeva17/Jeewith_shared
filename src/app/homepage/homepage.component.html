@@ -59,16 +59,20 @@
                 <div class="row video-container">
                     <div class="col-md-4 col-sm-6 col-xs-12"  *ngFor = "let video of visibleHomeMedia.VIDEO">
                             <div class="card card-member">
-                                <div class="content"><a routerLink = "/playvideo">
+                                <div class="content"> <!--<a routerLink = "/playvideo"> -->
                                     <div class="thumbnail">
                                         <img alt="..." src="{{video.imgSrc}}"/>
                                     </div>
                                     <div class="description">
                                         <h3 class="title">{{video.title}}</h3>
                                         <p class="small-text">{{video.subtitle}}</p>
-                                        <p class="description">{{video.Description}}</p>
-                                        <button class="btn btn-danger"><a routerLink = "/playvideo">Play Video</a></button>
-                                    </div></a>
+                                       <!-- <p class="description">{{video.Description}}</p> -->
+                                        <button class="btn btn-danger" storeClicked [videoLink]='video.link' 
+                                        [videoDescription] = 'video.Description' 
+                                        [videotitle] = 'video.title'
+                                        [videosubtitle] = 'video.subtitle'
+                                        (click)="clickEvent()">Play Video</button>
+                                    </div> <!--</a> -->
                                 </div>
                             </div>
                         </div>
