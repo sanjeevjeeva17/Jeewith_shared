@@ -89,7 +89,7 @@
     background-position-y: -100px;
   }
   .slideshow li:nth-child(3) { 
-    background-image: url(../../assets/img/Slider-3.png);
+    background-image: url(../../assets/img/slider-3.png);
     animation-delay: 10s; 
     background-position-y: -300px;
   }
