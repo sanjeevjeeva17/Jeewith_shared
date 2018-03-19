@@ -28,12 +28,12 @@
 							<div class="row">
 								<ul class="list-unstyled video-list-thumbs row">
                                         <li class="col-lg-4 col-md-6" *ngFor = "let video of (visibleVideos | VideoFilter:filterBy)">
-                                        <a href="#" title="{{video.title}}">
+											<a routerLink = "/playvideo">
                                             <img src={{video.url}} alt="Barca" class="img-responsive thumbnail" height="130px" />
                                             <h2>{{video.title}}</h2>
                                             <span class="glyphicon glyphicon-play-circle"></span>
-                                            <span class="duration">03:15</span>
-                                        </a>
+											<span class="duration">03:15</span>
+										</a>	
                                     </li>
                                    </ul>
 							</div>

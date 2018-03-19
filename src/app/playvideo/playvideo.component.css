@@ -1,0 +1,86 @@
+.section .parallax {
+    height: 20vh;
+}
+
+.iframe-row {
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    box-shadow: 0 12px 44px -20px rgba(0, 0, 0, 0.33), 0 8px 25px 5px rgba(0, 0, 0, 0.22), 0 5px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.section-header {
+    background-color: black;
+    height: 100px;
+}
+#page {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 750px;
+}
+
+@media only screen and (max-width: 810px){
+    .video-title {
+        display: none;
+    }
+}
+.thin-glyph {
+    font-weight: 100;
+    font-size: 2em;
+}
+
+.controls {
+    font-size: 1.5em;
+    color: #19a9ff;
+}
+@media only screen and (max-width: 991px){
+    .controls {
+        font-size: 1em;
+    }
+    .video-title {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 810px){
+    .controls {
+        display: none;
+    }
+}
+
+.previous {
+    text-align: right;
+}
+.left-section td {
+    padding-right: 20px;
+}
+.left-section table {
+float: right;
+}
+.right-section td {
+    padding-left: 20px;
+}
+
+@media only screen and (max-width: 1685px){
+    .right-section, .left-section {
+        width: 25%;
+        max-width: 25%;
+    }
+    .center-section {
+        width: 50%;
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 810px){
+    .right-section, .left-section {
+        width: 15%;
+        max-width: 15%;
+    }
+    .center-section {
+        width: 70%;
+        max-width: 70%;
+    }
+}
+
+
