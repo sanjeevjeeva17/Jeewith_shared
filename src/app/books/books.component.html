@@ -9,31 +9,19 @@
    <div class="section" id="videocategories">
 		 <div class="container">
 			 <div class="row">
- 
 				 <!-- <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 leftmenu">
 					 <h3>Browse Categories</h3>
- 
-					 <ul>
+					 	<ul>
 							 <li class="activeleftmenu" [class.active]="filterBy=='BIBLE_DOC'" (click)="filterBy='BIBLE_DOC'"><a>Bible Documentaries (बाइबलीय एेतिहासीक डकुमेण्ट्रीहरु)</a></li>
-						 
-							 
 							 <li [class.active]="filterBy=='JOSEPH'" (click)="filterBy='JOSEPH'"><a>Joseph Magar</a></li>
- 
-							 
 							 <li [class.active]="filterBy=='NUTITION'" (click)="filterBy='NUTITION'"><a>Nutrition</a></li>
- 
-							 
-							 <li [class.active]="filterBy=='SABBATHSCHOOL'" (click)="filterBy='SABBATHSCHOOL'"><a>S B Thing</a></li>
- 
-							 
+							 <li [class.active]="filterBy=='SABBATHSCHOOL'" (click)="filterBy='SABBATHSCHOOL'"><a>S B Thing</a></li>					 
 							 <li [class.active]="filterBy=='SEVENTH'" (click)="filterBy='SEVENTH'"><a>Seventh Day Sabbath Series</a></li>
- 
-							 </ul>
+						</ul>
 				 </div> -->
- 
  <!-- Left Sidebar -->
  
-				 <div class=" col-sm-4 col-md-3 col-lg-3 leftmenu">
+				<div class=" col-sm-4 col-md-3 col-lg-3 leftmenu">
 					 <div class="list-group">
 						 <ul class="activeleftmenu">
 							 <li class="list-group-item dropdown" [class.active] ><a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse Categories <b class="caret"></b></a>
@@ -98,31 +86,15 @@
 							 </li>
 						 </ul>
 					 </div>
-				 </div>
+				</div>
  
- 
- 
-				 
-				 <div class="col-xs-12 col-sm-6 col-md-9 col-lg-9">
-					 <h3>{{title}}</h3>
- 
-							 <div class="row">
-								 <ul class="list-unstyled video-list-thumbs row">
-										 <li class="col-lg-3 col-sm-4 col-xs-6" *ngFor = "let video of (visibleVideos | VideoFilter:filterBy)">
-										 <a href="#" title="{{video.title}}">
-											 <img src={{video.url}} alt="Barca" class="img-responsive" height="130px" />
-											 <h2>{{video.title}}</h2>
-											 <span class="glyphicon glyphicon-play-circle"></span>
-											 <span class="duration">03:15</span>
-										 </a>
-									 </li>
-									</ul>
-							 </div>
-							 </div>
-							 <div class="clearfix"></div><nav></nav>
-				 </div>
-			 </div>
-		 </div>
+				<div class="col-xs-12 col-sm-6 col-md-9 col-lg-9">
+					<h3>Thoughts from the Mount of Blessing</h3>
+					<iframe frameborder='0'  width='960' height='840'  title='Preview' src='../../assets/flipbooks/MB/mb_flipbook.html' type='text/html' allowfullscreen='true' scrolling='no' marginwidth='0' marginheight='0'></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
 		 
  
  
