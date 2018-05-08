@@ -10,9 +10,10 @@ data: any;
     constructor() { }
   
     ngOnInit() {
-      this.data = JSON.parse(localStorage.getItem('saved_data'));
+      this.data = JSON.parse(localStorage.getItem('saved_data'));      
       // tslint:disable-next-line:no-console
       console.info(this.data);
+      document.getElementById('youtubeLink').setAttribute('src', this.data.link );
     }
   
   }
