@@ -9,9 +9,7 @@ import { HomeVideoListService } from '../shared/homeVideoList.service';
 export class HomepageComponent implements OnInit {
 
   visibleHomeMedia= [] ;
-  public jeev: number;
-
-    constructor(private _HomevideoListService: HomeVideoListService) {
+     constructor(private _HomevideoListService: HomeVideoListService) {
            // this.visibleVideos = this.HomevideoListService.getVideos();
           // this.visibleAudios = this.HomevideoListService.getAudios();
           // this.visibleBooks = this.HomevideoListService.getBooks();
@@ -23,11 +21,4 @@ export class HomepageComponent implements OnInit {
   // this.visibleVideos = this.test.VIDEO;
    // alert(this.test);
   }
-
-  playVideoPage(event: any) {
-    console.log(event.srcElement.attributes.id);
-    alert("hi");
-  }
-
-
 }
