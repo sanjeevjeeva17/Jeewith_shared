@@ -1,3 +1,8 @@
 .parallax {
     height:20vh;
 }
+
+.book-iframe {
+    border-radius: 10px;
+    box-shadow: 0 12px 44px -20px rgba(0, 0, 0, 0.23), 0 8px 25px 5px rgba(0, 0, 0, 0.12), 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+}
