@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-//import {  } from '@angular/material'
+// import {  } from '@angular/material'
 import { HttpModule } from '@angular/http';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-//import { AppRoutingModule } from './/app-routing.module';
+// import { AppRoutingModule } from './/app-routing.module';
 import { VideosComponent } from './videos/videos.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -34,7 +34,7 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     BrowserModule,
     HttpModule,
-    HttpClientModule, 
+    HttpClientModule,
      RouterModule.forRoot(
       [{path: 'home', component: HomepageComponent},
       {path: 'video', component: VideosComponent},
