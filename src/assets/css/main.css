@@ -1,0 +1,39 @@
+
+/* Added Global Styles*/
+
+.sidebar li {
+    list-style: none;
+    margin-right: 25px;
+  }
+  
+  ul {
+        -webkit-padding-start: 0px;
+  }
+  
+  
+  #videocategories .container {
+    margin-left: 0;
+    padding-right: -20px;
+  }
+  
+  .dropdown-menu {
+    width: 250px;
+  }
+  @media (max-width: 992px) and (min-width: 481px) {
+  .section-header .parallax, .section-header .static-image {
+    height: 50vh;
+  }
+  .section-header .parallax:after, .section-header .static-image:after {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-header .parallax, .section-header .static-image {
+    height: 40vh;
+  }
+
+  .section-header .content {
+    top: 60%;
+  }
+}

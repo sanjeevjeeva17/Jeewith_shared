@@ -15,6 +15,8 @@ import { VideoFilterPipe } from './shared/videofilter.pipe';
 import { BooksComponent } from './books/books.component';
 import { ListenComponent } from './listen/listen.component';
 import { PlayVideoComponent } from './playvideo/playvideo.component';
+import { StoreClickedDirective } from './shared/storeClicked.directive';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -25,17 +27,20 @@ import { PlayVideoComponent } from './playvideo/playvideo.component';
     VideoFilterPipe,
     BooksComponent,
     ListenComponent,
-    PlayVideoComponent   
+    PlayVideoComponent,
+    StoreClickedDirective,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     HttpClientModule, 
      RouterModule.forRoot(
-      [{path:'home', component:HomepageComponent},
-      {path:'video', component:VideosComponent},
-      {path:'listen', component:ListenComponent},
-      {path:'books', component:BooksComponent},
+      [{path: 'home', component: HomepageComponent},
+      {path: 'video', component: VideosComponent},
+      {path: 'listen', component: ListenComponent},
+      {path: 'books', component: BooksComponent},
+      {path: 'contact', component: ContactComponent},
       {path : 'playvideo', component : PlayVideoComponent, data : {some_data : 'some value'}},
       {path: '',     redirectTo: 'home', pathMatch: 'full' }]
     )
