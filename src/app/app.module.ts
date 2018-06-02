@@ -15,7 +15,7 @@ import { VideoFilterPipe } from './shared/videofilter.pipe';
 import { BooksComponent } from './books/books.component';
 import { ListenComponent } from './listen/listen.component';
 import { PlayVideoComponent } from './playvideo/playvideo.component';
-// import { StoreClickedDirective } from './shared/storeClicked.directive';
+import { StoreClickedDirective } from './shared/storeClicked.directive';
 import { ContactComponent } from './contact/contact.component';
 
 
@@ -28,7 +28,7 @@ import { ContactComponent } from './contact/contact.component';
     BooksComponent,
     ListenComponent,
     PlayVideoComponent,
-    // StoreClickedDirective,
+    StoreClickedDirective,
     ContactComponent
   ],
   imports: [
