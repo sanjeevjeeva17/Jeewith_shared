@@ -5,7 +5,7 @@ import { VideoListService } from '../shared/videoList.service';
   templateUrl: './videos.component.html',
   styleUrls: ['./videos.component.css']
 })
-export class VideosComponent implements OnInit {  
+export class VideosComponent implements OnInit {
 @Input() filterBy?: string = 'Bible Studies';
     visibleVideos: any[] = [];
     category: any = [];

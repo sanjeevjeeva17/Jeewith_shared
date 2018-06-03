@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-// import {  } from '@angular/material'
+import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
@@ -17,6 +17,7 @@ import { ListenComponent } from './listen/listen.component';
 import { PlayVideoComponent } from './playvideo/playvideo.component';
 import { StoreClickedDirective } from './shared/storeClicked.directive';
 import { ContactComponent } from './contact/contact.component';
+import { ContactService } from './contact/contact.service';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { ContactComponent } from './contact/contact.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpModule,
     HttpClientModule,
      RouterModule.forRoot(
@@ -45,7 +47,7 @@ import { ContactComponent } from './contact/contact.component';
       {path: '',     redirectTo: 'home', pathMatch: 'full' }]
     )
   ],
-  providers: [VideoListService, VideoFilterPipe, HomeVideoListService],
+  providers: [VideoListService, VideoFilterPipe, HomeVideoListService, ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
