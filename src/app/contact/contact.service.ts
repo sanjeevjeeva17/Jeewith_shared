@@ -10,6 +10,7 @@ import { Observable } from 'rxjs/Rx';
 export class ContactService {
 
   constructor(private http: Http) { }
+  /*
 
   postEmail(name: String, email: String, message: String): Observable<string> {
 
@@ -42,6 +43,6 @@ export class ContactService {
 
 private handleError(err, some) {
       // handle error
-  }
+} */
 
 }
